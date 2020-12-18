@@ -1,10 +1,10 @@
 # clevercloud-php
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/gaelreyrol/clevercloud-php.svg?style=flat-square)](https://packagist.org/packages/gaelreyrol/clevercloud-php)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/gaelreyrol/clevercloud-php/run-tests?label=tests)](https://github.com/gaelreyrol/clevercloud-php/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/gaelreyrol/clevercloud-php/run-tests?label=tests)](https://github.com/gaelreyrol/clevercloud-php/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/gaelreyrol/clevercloud-php.svg?style=flat-square)](https://packagist.org/packages/gaelreyrol/clevercloud-php)
 
-> A PHP client for Clever Cloud API
+> [WIP] A PHP client for Clever Cloud API
 
 ## Installation
 
@@ -17,8 +17,12 @@ composer require gaelreyrol/clevercloud-php
 ## Usage
 
 ```php
-$client = new CleverCloud\Client();
-echo $client->echoPhrase('Hello, Gaelreyrol!');
+$cc = new CleverCloud\CleverCloud([
+    'consumer_key' => 'my_key',
+    'consumer_secret' => 'my_secret',
+    'token' => 'my_token',
+    'token_secret' => 'my_token_secret',
+]);
 ```
 
 ## Testing
