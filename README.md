@@ -1,7 +1,7 @@
 # clevercloud-php
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/gaelreyrol/clevercloud-php.svg?style=flat-square)](https://packagist.org/packages/gaelreyrol/clevercloud-php)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/gaelreyrol/clevercloud-php/run-tests?label=tests)](https://github.com/gaelreyrol/clevercloud-php/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/gaelreyrol/clevercloud-php/run-tests/main?label=tests&style=flat-square)](https://github.com/gaelreyrol/clevercloud-php/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/gaelreyrol/clevercloud-php.svg?style=flat-square)](https://packagist.org/packages/gaelreyrol/clevercloud-php)
 
 > [WIP] A PHP client for Clever Cloud API
