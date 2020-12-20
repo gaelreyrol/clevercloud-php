@@ -38,5 +38,5 @@ jobs:
           CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
           CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}
           CLEVER_CONSUMER_KEY: ${{ secrets.CLEVER_CONSUMER_KEY }}
-          CLEVER_CONSUMER_SECRET: ${{ secrets.CLEVER_CONSUMER_KEY }}
+          CLEVER_CONSUMER_SECRET: ${{ secrets.CLEVER_CONSUMER_SECRET }}
         run: vendor/bin/phpunit
