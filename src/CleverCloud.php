@@ -8,18 +8,22 @@ use GuzzleHttp\Subscriber\Oauth\Oauth1;
 
 class CleverCloud
 {
-    public Client $http;
+    public Client $client;
 
-    public function __construct(array $config)
+    public function __construct(array $oauthConfig)
     {
         $stack = HandlerStack::create();
 
-        $stack->push(new Oauth1($config));
+        $stack->push(new Oauth1($oauthConfig));
 
-        $this->http = new Client([
-            'base_uri' => 'https://api.clever-cloud.com/v2',
+        $this->client = new Client([
+            'base_uri' => 'https://api.clever-cloud.com/v2/',
             'handler' => $stack,
             'auth' => 'oauth',
+            'headers' => [
+                'Accept' => 'application/json',
+                'Content-Type' => 'application/json',
+            ],
         ]);
     }
 }
