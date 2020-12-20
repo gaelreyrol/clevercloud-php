@@ -28,4 +28,10 @@
     <logging>
         <junit outputFile="build/report.junit.xml"/>
     </logging>
+    <php>
+        <env name="CLEVER_TOKEN" value="" />
+        <env name="CLEVER_SECRET" value="" />
+        <env name="CLEVER_CONSUMER_KEY" value="" />
+        <env name="CLEVER_CONSUMER_SECRET" value="" />
+    </php>
 </phpunit>
