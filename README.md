@@ -1,10 +1,10 @@
 # clevercloud-php
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/gaelreyrol/clevercloud-php.svg?style=flat-square)](https://packagist.org/packages/gaelreyrol/clevercloud-php)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/gaelreyrol/clevercloud-php/run-tests/main?label=tests&style=flat-square)](https://github.com/gaelreyrol/clevercloud-php/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/gaelreyrol/clevercloud-php/run-tests?label=tests&style=flat-square)](https://github.com/gaelreyrol/clevercloud-php/actions?query=workflow%3Arun-tests)
 [![Total Downloads](https://img.shields.io/packagist/dt/gaelreyrol/clevercloud-php.svg?style=flat-square)](https://packagist.org/packages/gaelreyrol/clevercloud-php)
 
-> [WIP] A PHP client for Clever Cloud API
+> [WIP] A PHP SDK for Clever Cloud API
 
 ## Installation
 
@@ -23,6 +23,9 @@ $cc = new CleverCloud\CleverCloud([
     'token' => 'my_token',
     'token_secret' => 'my_token_secret',
 ]);
+
+$selfAPI = new CleverCloud\APIs\SelfAPI($cc);
+$self = $selfAPI->getSelf();
 ```
 
 ## Testing
