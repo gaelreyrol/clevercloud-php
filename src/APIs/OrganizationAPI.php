@@ -23,7 +23,7 @@ class OrganizationAPI extends API
         }
 
         return $this->cleverCloud->client->request(
-            'GET',
+            'POST',
             "organisations/{$organizationId}/applications/{$applicationId}/instances",
             [
                 'query' => $params,
