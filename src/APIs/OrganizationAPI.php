@@ -9,17 +9,17 @@ class OrganizationAPI extends API
     public function reDeployApplication(
         string $organizationId,
         string $applicationId,
-        string $commit = null,
-        bool $useCache = null
+        bool $useCache = true,
+        string $commit = null
     ): ResponseInterface {
         $params = [];
 
-        if (is_null($commit)) {
-            $params['commit'] = $commit;
+        if ($useCache === false) {
+            $params['useCache'] = 'no';
         }
 
-        if (is_null($useCache)) {
-            $params['useCache'] = $useCache;
+        if (is_null($commit)) {
+            $params['commit'] = $commit;
         }
 
         return $this->cleverCloud->client->request(
